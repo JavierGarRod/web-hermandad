@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 .site-header {
-  background: #00264d;
+  background: #000000;
   color: white;
   padding: 1rem 0;
   text-align: center;
@@ -36,8 +36,9 @@ section {
   padding: 2rem 1rem;
 }
 .site-footer {
-  background: #00264d;
+  background: #000000;
   color: white;
   text-align: center;
   padding: 1rem;
 }
+
