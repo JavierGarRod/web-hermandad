@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+.site-header {
+  background: #00264d;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+.site-header nav ul {
+  list-style: none;
+  padding: 0;
+}
+.site-header nav ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+.site-header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.hero {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #f4f4f4;
+}
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+section {
+  padding: 2rem 1rem;
+}
+.site-footer {
+  background: #00264d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
