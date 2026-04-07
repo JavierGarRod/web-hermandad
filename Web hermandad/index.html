@@ -1,51 +1,449 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hermandad de la Soledad de La Algaba</title>
+  <meta charset="UTF-8" />
+  <title>Hermandad de Ejemplo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Página oficial de la Hermandad de Ejemplo" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <img src="images\Escudo2.png" alt="Escudo de la hermandad" width="90" height="90"><h1>Hermandad de la Soledad de La Algaba</h1>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="html/html1.html">Historia</a></li>
-		<li><a href="html/html2.html">Titulares</a></li>
-        <li><a href="html/html3.html">Cultos y actos</a></li>
-		<li><a href="html/html4.html">Junta Juvenil</a></li>
-        <li><a href="html/html5.html">Música y formación</a></li>
-        <li><a href="html/html6.html">Últimas noticias</a></li>
-      </ul>
+  <!-- CABECERA -->
+  <header>
+    <nav class="nav">
+      <div class="nav-logo">
+        <!-- Sustituye la imagen por el escudo de la hermandad -->
+        <img
+          src="https://images.pexels.com/photos/220444/pexels-photo-220444.jpeg?auto=compress&cs=tinysrgb&w=400"
+          alt="Escudo Hermandad"
+        />
+        <div>
+          <div>Hermandad de Ejemplo</div>
+          <span>Rute · Andalucía</span>
+        </div>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#titulares">Titulares</a>
+        <a href="#calendario">Calendario</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
     </nav>
   </header>
 
-  <section id="inicio" class="hero">
-    <h2>Bienvenidos</h2>
-    <p>Bienvenidos a la página web oficial de la Antigua, Real, Ilustre y Franciscana Hermandad y Cofradia de Nazarenos del Santo Entierro de Cristo, Nuestra Señora de la Soledad, Resurreción Gloriosa y San Francisco de Asis.</p>
-    <div class="hero-image">
-    </div>
-  </section>
+  <!-- HERO -->
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-inner">
+        <div>
+          <div class="hero-meta">Fundada en 1950 · Hermandad de Penitencia</div>
+          <h1 class="hero-title">Hermandad de Nuestro Padre Jesús Nazareno</h1>
+          <p class="hero-subtitle">
+            Página oficial de la Hermandad. Información sobre cultos, actos, historia y vida de hermandad
+            durante todo el año.
+          </p>
+          <div class="hero-buttons">
+            <a href="#calendario" class="btn btn-primary">
+              Próximos cultos
+            </a>
+            <a href="#contacto" class="btn btn-outline">
+              Hazte hermano
+            </a>
+          </div>
+        </div>
+        <aside class="hero-card" aria-label="Datos principales de la hermandad">
+          <h3>Datos de la hermandad</h3>
+          <p>
+            Modifica estos datos con la información real de tu hermandad: sede canónica, día de salida,
+            número de hermanos, etc.
+          </p>
+          <div class="hero-card-row">
+            <div class="hero-card-label">Sede canónica</div>
+            <div class="hero-card-value">Parroquia de San Juan Bautista</div>
+          </div>
+          <div class="hero-card-row">
+            <div class="hero-card-label">Día de salida</div>
+            <div class="hero-card-value">Viernes Santo</div>
+          </div>
+          <div class="hero-card-row">
+            <div class="hero-card-label">Número de hermanos</div>
+            <div class="hero-card-value">Más de 500</div>
+          </div>
+          <div class="hero-card-row">
+            <div class="hero-card-label">Hermano Mayor</div>
+            <div class="hero-card-value">Nombre y Apellidos</div>
+          </div>
+          <div class="hero-card-footer">
+            Última actualización de datos: marzo 2026. Para cambios, contactar con la Secretaría de la
+            hermandad.
+          </div>
+        </aside>
+      </div>
+    </section>
 
-  <section id="quienes-somos">
-    <h2>Quiénes somos</h2>
-    <p>La Hermandad de la Soledad de La Algaba es una corporación cofrade que agrupa a sus hermanos y hermanas para culto, formación, caridad y participación en la vida de la Iglesia y del pueblo.</p>
-    <p>Dirección: La Algaba (Sevilla).<br>Teléfono: …<br>Email: …</p>
-  </section>
-  <footer class="site-footer">
-  <div><a href="html\html1.html">Siguiente página --></a></div>
-    <h2>Contacto</h2>
-    <p>Dirección: Calle Sevilla, La Algaba (Sevilla)</p>
-    <p>Email: contacto@hermandaddelasoledadalgaba.es</p>
-    <p>Teléfono: 6 xx xxx xxx</p>
-    <p>Síguenos en nuestras redes sociales: <a href="https://www.instagram.com/SoledadLaAlgaba">Instagram</a> | <a href="https://twitter.com/SoledadLaAlgaba">Twitter</a> | <a href="https://www.facebook.com/…">Facebook</a></p>
-    <p>© 2025 Hermandad de la Soledad de La Algaba.</p>
+    <!-- HISTORIA -->
+    <section id="historia">
+      <div class="section-inner">
+        <h2 class="section-title">Historia</h2>
+        <p class="section-subtitle">
+          Un breve recorrido por los orígenes, la evolución y los momentos más importantes de la hermandad.
+        </p>
+        <div class="historia-grid">
+          <div class="historia-text">
+            <p>
+              La Hermandad de Nuestro Padre Jesús Nazareno fue fundada a mediados del siglo XX, fruto de la
+              devoción popular y del deseo de un grupo de fieles de dar culto público a la Sagrada Imagen.
+            </p>
+            <p>
+              A lo largo de las décadas, la hermandad ha ido creciendo en número de hermanos y en patrimonio
+              artístico, incorporando nuevos enseres, restaurando sus imágenes titulares y consolidando sus
+              cultos internos y externos.
+            </p>
+            <p>
+              La estación de penitencia en la tarde del Viernes Santo se ha convertido en una de las citas
+              más esperadas de la Semana Santa de la localidad, destacando por el recogimiento, el silencio
+              y la sobriedad de su cortejo.
+            </p>
+            <p>
+              Además de la Semana Santa, la hermandad mantiene una intensa vida durante todo el año, con
+              cultos mensuales, acciones caritativas y actividades formativas dirigidas a jóvenes y adultos.
+            </p>
+          </div>
+          <aside class="historia-datos">
+            <h3>Fechas destacadas</h3>
+            <ul>
+              <li><span>1950:</span> Fundación de la hermandad.</li>
+              <li><span>1965:</span> Primera estación de penitencia completa.</li>
+              <li><span>1988:</span> Bendición de la nueva Casa de Hermandad.</li>
+              <li><span>2005:</span> Restauración integral del paso de misterio.</li>
+              <li><span>2020:</span> Adaptación de cultos a formato online por pandemia.</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- TITULARES -->
+    <section id="titulares">
+      <div class="section-inner">
+        <h2 class="section-title">Imágenes titulares</h2>
+        <p class="section-subtitle">
+          Sustituye las fotos y textos por los datos reales de tus titulares: autor, año, restauraciones,
+          etc.
+        </p>
+        <div class="titulares-grid">
+          <article class="titular-card">
+            <div class="titular-imagen">
+              <img
+                src="https://images.pexels.com/photos/2083155/pexels-photo-2083155.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Nuestro Padre Jesús Nazareno"
+              />
+            </div>
+            <div class="titular-nombre">Nuestro Padre Jesús Nazareno</div>
+            <div class="titular-titulo">Titular cristífero</div>
+            <p class="titular-detalle">
+              Imagen de vestir para culto y procesión. Representa a Cristo cargando con la cruz camino del
+              Calvario.
+            </p>
+          </article>
+
+          <article class="titular-card">
+            <div class="titular-imagen">
+              <img
+                src="https://images.pexels.com/photos/2083157/pexels-photo-2083157.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="María Santísima de los Dolores"
+              />
+            </div>
+            <div class="titular-nombre">María Santísima de los Dolores</div>
+            <div class="titular-titulo">Titular mariana</div>
+            <p class="titular-detalle">
+              Dolorosa de candelero, acompañante de Jesús Nazareno en los cultos internos y en la estación de
+              penitencia.
+            </p>
+          </article>
+
+          <article class="titular-card">
+            <div class="titular-imagen">
+              <img
+                src="https://images.pexels.com/photos/2083156/pexels-photo-2083156.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="San Juan Evangelista"
+              />
+            </div>
+            <div class="titular-nombre">San Juan Evangelista</div>
+            <div class="titular-titulo">Copatrón de la hermandad</div>
+            <p class="titular-detalle">
+              Imagen secundaria que acompaña a la Virgen en determinados cultos y actos extraordinarios.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALENDARIO -->
+    <section id="calendario">
+      <div class="section-inner">
+        <h2 class="section-title">Calendario de cultos y actos</h2>
+        <p class="section-subtitle">
+          Ejemplo de calendario anual. Puedes ir actualizando las fechas y actos cada año.
+        </p>
+        <div class="calendario-grid">
+          <ul class="calendario-lista">
+            <li class="calendario-item">
+              <div class="calendario-fecha">
+                <div class="calendario-fecha-dia">15</div>
+                <div class="calendario-fecha-mes">Mar</div>
+              </div>
+              <div class="calendario-contenido">
+                <div class="calendario-titulo">Triduo a Nuestro Padre Jesús Nazareno</div>
+                <div class="calendario-detalle">
+                  19:30 h · Parroquia de San Juan Bautista. Predica el Rvdo. Sr. D. Nombre y Apellidos.
+                </div>
+                <div class="calendario-nota">
+                  Se ruega a los hermanos asistir con medalla de la hermandad.
+                </div>
+              </div>
+            </li>
+            <li class="calendario-item">
+              <div class="calendario-fecha">
+                <div class="calendario-fecha-dia">27</div>
+                <div class="calendario-fecha-mes">Mar</div>
+              </div>
+              <div class="calendario-contenido">
+                <div class="calendario-titulo">Vía Crucis con la Imagen de Jesús Nazareno</div>
+                <div class="calendario-detalle">
+                  21:00 h · Salida desde la parroquia. Recorrido por las calles del barrio.
+                </div>
+                <div class="calendario-nota">
+                  Acto piadoso en silencio. Se recomienda portar cirio morado.
+                </div>
+              </div>
+            </li>
+            <li class="calendario-item">
+              <div class="calendario-fecha">
+                <div class="calendario-fecha-dia">03</div>
+                <div class="calendario-fecha-mes">Abr</div>
+              </div>
+              <div class="calendario-contenido">
+                <div class="calendario-titulo">Estación de penitencia · Viernes Santo</div>
+                <div class="calendario-detalle">
+                  19:00 h · Salida de la parroquia. Recogida aproximada a las 00:30 h.
+                </div>
+                <div class="calendario-nota">
+                  Los nazarenos deberán estar en la Casa de Hermandad una hora antes de la salida.
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="calendario-info">
+            <p>
+              <strong>Ensayos de costaleros:</strong> Todos los jueves de febrero y marzo a las 21:30 h en la
+              Casa de Hermandad.
+            </p>
+            <p>
+              <strong>Reparto de túnicas:</strong> Del 1 al 10 de marzo, de 19:00 a 21:00 h. Prioridad para
+              hermanos antiguos.
+            </p>
+            <p>
+              <strong>Cultos mensuales:</strong> Misa de hermandad el primer viernes de cada mes a las 20:00 h.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOTICIAS -->
+    <section id="noticias">
+      <div class="section-inner">
+        <h2 class="section-title">Noticias</h2>
+        <p class="section-subtitle">
+          Publica aquí comunicados oficiales, convocatorias, crónicas de cultos y cualquier información de
+          interés para los hermanos.
+        </p>
+        <div class="noticias-grid">
+          <div class="noticias-lista">
+            <article class="noticia">
+              <div class="noticia-fecha">10 · marzo · 2026</div>
+              <div class="noticia-titulo">Apertura del plazo de reparto de túnicas</div>
+              <p class="noticia-resumen">
+                La hermandad informa de que el próximo lunes se abrirá el plazo para el reparto de túnicas
+                para la estación de penitencia del Viernes Santo.
+              </p>
+              <a href="#" class="noticia-enlace">Leer más</a>
+            </article>
+
+            <article class="noticia">
+              <div class="noticia-fecha">25 · febrero · 2026</div>
+              <div class="noticia-titulo">Convocatoria de Cabildo General Ordinario</div>
+              <p class="noticia-resumen">
+                Se convoca a todos los hermanos mayores de 18 años al Cabildo General Ordinario que tendrá
+                lugar en la Casa de Hermandad.
+              </p>
+              <a href="#" class="noticia-enlace">Ver orden del día</a>
+            </article>
+
+            <article class="noticia">
+              <div class="noticia-fecha">05 · enero · 2026</div>
+              <div class="noticia-titulo">Campaña de recogida de alimentos</div>
+              <p class="noticia-resumen">
+                Gracias a la colaboración de los hermanos y vecinos, se han recogido más de 500 kg de
+                alimentos para Cáritas parroquial.
+              </p>
+              <a href="#" class="noticia-enlace">Crónica completa</a>
+            </article>
+          </div>
+          <aside class="noticias-lateral">
+            <h3>Boletín digital</h3>
+            <p>
+              Si lo deseas, puedes recibir en tu correo electrónico el boletín digital de la hermandad con
+              las últimas noticias y convocatorias.
+            </p>
+            <p>
+              Envía un correo a <strong>secretaria@hermandadejemplo.es</strong> indicando tu nombre completo,
+              DNI y número de hermano.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria">
+      <div class="section-inner">
+        <h2 class="section-title">Galería</h2>
+        <p class="section-subtitle">
+          Sustituye estas imágenes por fotografías propias de la hermandad: cultos, ensayos, estación de
+          penitencia, etc.
+        </p>
+        <div class="galeria-grid">
+          <div class="galeria-item">
+            <img
+              src="https://images.pexels.com/photos/2083158/pexels-photo-2083158.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Paso en la calle"
+            />
+          </div>
+          <div class="galeria-item">
+            <img
+              src="https://images.pexels.com/photos/2083159/pexels-photo-2083159.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Detalle de candelería"
+            />
+          </div>
+          <div class="galeria-item">
+            <img
+              src="https://images.pexels.com/photos/2083160/pexels-photo-2083160.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Costaleros en ensayo"
+            />
+          </div>
+          <div class="galeria-item">
+            <img
+              src="https://images.pexels.com/photos/2083161/pexels-photo-2083161.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Detalle del paso"
+            />
+          </div>
+          <div class="galeria-item">
+            <img
+              src="https://images.pexels.com/photos/2083162/pexels-photo-2083162.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Interior del templo"
+            />
+          </div>
+          <div class="galeria-item">
+            <img
+              src="https://images.pexels.com/photos/2083163/pexels-photo-2083163.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Salida procesional"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <div class="section-inner">
+        <h2 class="section-title">Contacto y altas de hermanos</h2>
+        <p class="section-subtitle">
+          Formulario básico para que los interesados puedan contactar con la hermandad o solicitar su alta
+          como hermanos.
+        </p>
+        <div class="contacto-grid">
+          <form onsubmit="enviarFormulario(event)">
+            <div class="form-row">
+              <label for="nombre">Nombre y apellidos</label>
+              <input type="text" id="nombre" name="nombre" required />
+            </div>
+            <div class="form-row">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required />
+              <div class="form-ayuda">
+                Usaremos este correo para responderte y enviarte información de la hermandad.
+              </div>
+            </div>
+            <div class="form-row">
+              <label for="telefono">Teléfono de contacto</label>
+              <input type="tel" id="telefono" name="telefono" />
+            </div>
+            <div class="form-row">
+              <label for="motivo">Motivo del contacto</label>
+              <select id="motivo" name="motivo">
+                <option value="informacion">Información general</option>
+                <option value="alta">Alta como hermano/a</option>
+                <option value="baja">Baja o modificación de datos</option>
+                <option value="donacion">Donación / Caridad</option>
+                <option value="otros">Otros</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+            <div id="mensajeExito" class="form-ayuda" style="display:none; color:green; margin-top:0.5rem;">
+              Tu mensaje se ha registrado en el navegador (ejemplo). Configura aquí el envío real por correo
+              o a tu servidor.
+            </div>
+          </form>
+          <aside class="contacto-info">
+            <h3>Datos de contacto</h3>
+            <p class="contacto-dato">
+              <strong>Casa de Hermandad:</strong> Calle Ejemplo, 12 · 14960 Rute (Córdoba)
+            </p>
+            <p class="contacto-dato">
+              <strong>Correo electrónico:</strong> secretaria@hermandadejemplo.es
+            </p>
+            <p class="contacto-dato">
+              <strong>Teléfono:</strong> 600 000 000
+            </p>
+            <p class="contacto-dato">
+              <strong>Horario de atención:</strong> Martes y jueves de 19:00 a 21:00 h.
+            </p>
+            <div class="contacto-redes">
+              <span class="chip">Facebook</span>
+              <span class="chip">Instagram</span>
+              <span class="chip">YouTube</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE -->
+  <footer>
+    <div class="footer-inner">
+      <div>© 2026 Hermandad de Ejemplo · Todos los derechos reservados</div>
+      <div class="footer-links">
+        <a href="#inicio">Volver arriba</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#">Aviso legal</a>
+        <a href="#">Política de privacidad</a>
+      </div>
+    </div>
   </footer>
 
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v16.0" nonce="…"></script>
-
+  <script src="js/JS1.js"></script>
 </body>
 </html>
