@@ -37,7 +37,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(43, 26, 26, 0.96);
+      background: rgba(0, 0, 0, 0.96);
       backdrop-filter: blur(6px);
       color: #fff;
     }
